@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভর্তি ফর্ম</title>
+    <style>
+        body {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 15px;
+        }
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Morning Sun Model School and College</h1>
+    <p>স্থাপিত: ২০০৪ | ফোন: ০১৯০৯-৭০১২১৯</p>
+</header>
+
+<section>
+    <h2 style="text-align: center;">ভর্তি ফর্ম</h2>
+    <form action="/submit-admission" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="student-name">শিক্ষার্থীর নাম:</label>
+            <input type="text" id="student-name" name="student_name" required>
+        </div>
+        <div>
+            <label for="father-name">পিতার নাম:</label>
+            <input type="text" id="father-name" name="father_name" required>
+        </div>
+        <div>
+            <label for="mother-name">মাতার নাম:</label>
+            <input type="text" id="mother-name" name="mother_name" required>
+        </div>
+        <div>
+            <label for="dob">জন্মতারিখ:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="class">ভর্তির শ্রেণি:</label>
+            <select id="class" name="class" required>
+                <option value="nursery">নার্সারি</option>
+                <option value="kg">কেজি</option>
+                <option value="one">১ম শ্রেণি</option>
+                <option value="two">২য় শ্রেণি</option>
+                <option value="three">৩য় শ্রেণি</option>
+                <option value="four">৪র্থ শ্রেণি</option>
+                <option value="five">৫ম শ্রেণি</option>
+                <option value="six">৬ষ্ঠ শ্রেণি</option>
+                <option value="seven">৭ম শ্রেণি</option>
+                <option value="eight">৮ম শ্রেণি</option>
+                <option value="nine">৯ম শ্রেণি</option>
+                <option value="ten">১০ম শ্রেণি</option>
+                <option value="eleven">১১শ শ্রেণি</option>
+                <option value="twelve">১২শ শ্রেণি</option>
+            </select>
+        </div>
+        <div>
+            <label for="nid">পিতামাতার ভোটার আইডি (NID):</label>
+            <input type="file" id="nid" name="nid" accept=".pdf,.jpg,.png" required>
+        </div>
+        <div>
+            <label for="birth-cert">জন্ম সনদ:</label>
+            <input type="file" id="birth-cert" name="birth_cert" accept=".pdf,.jpg,.png" required>
+        </div>
+        <div>
+            <label for="address">ঠিকানা:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="phone">যোগাযোগের নম্বর:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="০১৭XXXXXXXX" required>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit">ফর্ম জমা দিন</button>
+        </div>
+    </form>
+</section>
+
+<footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+    <p>&copy; ২০২৪ Morning Sun Model School and College। সর্বস্বত্ব সংরক্ষিত।</p>
+</footer>
+
+</body>
+</html>
